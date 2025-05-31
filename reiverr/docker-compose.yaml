@@ -1,0 +1,15 @@
+version: "3.8"
+
+services:
+  reiverr:
+    image: ghcr.io/aleksilassila/reiverr:latest
+    container_name: reiverr
+    environment:
+      - PUID=${PUID}
+      - PGID=${PGID}
+      - TZ=${TZ}
+    ports:
+      - 9494:9494
+    volumes:
+      - ${CONFIG_ROOT}/reiverr:/config
+    restart: unless-stopped
