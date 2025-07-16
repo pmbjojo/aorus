@@ -2,7 +2,7 @@
 
 This repository contains configuration files for managing Docker services on my private home server.
 
-> Each service is organized in its own directory with a corresponding `docker-compose.yaml` or `docker-compose.yml` file for easy deployment and management.
+> Each service is organized in its own directory with a corresponding `docker-compose.yaml` file for easy deployment and management.
 
 ## Services
 
@@ -31,7 +31,7 @@ This repository contains configuration files for managing Docker services on my 
    ```
 2. **Configure environment variables:**
 
-   - Edit the relevant `docker-compose.yaml`/`.yml` files and any config files as needed for your environment.
+   - Edit the relevant `docker-compose.yaml` files and any config files as needed for your environment.
 
 3. **Start a service:**
 
