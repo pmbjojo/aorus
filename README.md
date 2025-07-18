@@ -45,6 +45,23 @@ This repository contains configuration files for managing Docker services on my 
    docker compose down
    ```
 
+5. Running multiple services
+
+To manage individual or combined services easily, Docker Compose allows combining multiple project-specific `docker-compose.yaml` files using multiple `-f` flags.
+
+```bash
+docker compose \
+  -f jellyfin/docker-compose.yaml \
+  -f radarr/docker-compose.yaml \
+  up -d
+```
+
+This command will:
+
+* Load services defined in `jellyfin/docker-compose.yaml` and `radarr/docker-compose.yaml`.
+* Start all selected services in a single Compose project.
+* Keep services isolated within their own configurations while allowing centralized control.
+
 ## License
 
 This repository is for personal use. Please review each service's license before deploying in a production environment.
